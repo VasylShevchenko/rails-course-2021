@@ -15,5 +15,10 @@
   <%= @user.age %>
 </p>
 
+<p>
+  <strong>Card Number:</strong>
+  <%= @user.card_number %>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
