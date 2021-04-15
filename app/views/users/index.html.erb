@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Users</h1>
+<td><%= link_to 'Logout', destroy_user_session_path, method: :delete %></td>
+<h3>Current user email: <%= current_user.email %></h3>
+
+<h2>Users</h2>
+<!--<td><%#= link_to 'Logout', destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
 
 <table>
   <thead>
@@ -29,3 +33,5 @@
 <br>
 
 <%= link_to 'New User', new_user_path %>
+
+
