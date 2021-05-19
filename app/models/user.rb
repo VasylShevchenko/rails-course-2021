@@ -13,6 +13,8 @@ class User < ApplicationRecord
   validates :card_number, presence: false
   # validate :validate_card_number
 
+  has_many :articles
+
   private
 
   def validate_card_number
